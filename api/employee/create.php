@@ -6,7 +6,6 @@
     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
     include_once '../../config/database.php';
     include_once '../../models/employees.php';
-    
     $database = new Database();
     $db = $database->getConnection();
     $item = new Employee($db);
@@ -16,10 +15,10 @@
     $item->age = $data->age;
     $item->designation = $data->designation;
     $item->created = date('Y-m-d H:i:s');
-
+    
     if($item->createEmployee()){
-        echo 'Employee created successfully.';
+        echo json_encode(['message'=>'Employee created successfully.']);
     } else{
-        echo 'Employee could not be created.';
+        echo json_encode(['message'=>'Employee could not be created.']);
     }
 ?>
