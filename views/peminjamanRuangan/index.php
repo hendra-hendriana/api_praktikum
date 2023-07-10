@@ -25,7 +25,7 @@
             <div class="card">
                 <div class="card-header bg-success">
                     <div class="row">
-                        <div class="col col-sm-9 text-white">Employee</div>
+                        <div class="col col-sm-9 text-white"></div>
                         <div class="col col-sm-3">
                             <button type="button" id="add_data" class="btn btn-success btn-sm float-end">Add</button>
                         </div>
