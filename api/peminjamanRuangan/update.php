@@ -25,8 +25,8 @@
     $item->selesaipinjam = $data->selesaipinjam;
     
     if($item->updateEmployee()){
-        echo json_encode(['message'=>'Employee updated successfully.']);
+        echo json_encode(['message'=>'Data Ruangan Berhasil Diupdate.']);
     } else{
-        echo json_encode(['message'=>'Employee could not be updated.']);
+        echo json_encode(['message'=>'Tidak Dapat Mengupdate Data Ruangan.']);
     }
 ?>

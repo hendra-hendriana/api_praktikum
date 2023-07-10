@@ -17,8 +17,8 @@
     $item->selesaipinjam = $data->selesaipinjam;
     
     if($item->createEmployee()){
-        echo json_encode(['message'=>'Employee created successfully.']);
+        echo json_encode(['message'=>'Data Ruangan Berhasil Ditambahkan']);
     } else{
-        echo json_encode(['message'=>'Employee could not be created.']);
+        echo json_encode(['message'=>'Data Ruangan Tidak Dapat Ditambahkan.']);
     }
 ?>
